@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Direktorat Teknologi dan Pengembangan - Dirgantara Indonesia</title>
+  <meta name="Description" content="Dirgantara Indonesia"/>
+  <meta name="Keywords" content="dirgantara, indonesia, berita, perusahaan"/>
+
+   <!-- Favicons -->
+   <link href="assets/logo.png" rel="icon">
+   <link href="assets/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- JQuery -->
+<script src="assets/js/jquery-3.6.0.js"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  
+ <!-- ======= Header ======= -->
+<section id="topbar" class="topbar d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-calendar-event d-flex align-items-center">
+        <a href="#" id="calendar-trigger">Kalender</a>
+      </i>
+      <i class="bi bi-bell d-flex align-items-center ms-4">
+        <a href="#" id="announcement-trigger">Pengumuman</a>
+      </i>
+    </div>
+  </div>
+</section>
+<!-- End Top Bar -->
+
+<!-- Modal for Calendar -->
+<div id="calendar-modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h3>Kalender</h3>
+      <span class="close" id="calendar-close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <!-- Embedded Google Calendar with Event -->
+      <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarid&ctz=Asia/Jakarta" 
+              style="border:0" 
+              width="100%" 
+              height="300px" 
+              frameborder="0"></iframe>
+      <!-- Note Below the Calendar -->
+      <p class="calendar-note mt-3"><strong>Catatan:</strong> - 26 April ulang tahun PT Dirgantara Indonesia.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Announcement -->
+<div id="announcement-modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h3>Pengumuman</h3>
+      <span class="close" id="announcement-close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p>Saat ini tidak ada pengumuman baru.</p>
+    </div>
+  </div>
+</div>
+
+  <header id="header" class="header d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="/assets/img/logo.png" alt="Logo" class="logo-img">
+      <h1>Direktorat Teknologi dan Pengembangan</h1>
+    </a>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#portfolio">Fitur</a></li>
+        <li><a href="#services">Pusat Informasi</a></li>
+        <li><a href="#sekilas-berita">Sekilas Berita</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav><!-- .navbar -->
+
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+  </div>
+</header><!-- End Header -->
+
+<nav id="bottom-navbar" class="bottom-navbar">
+  <div class="container-fluid container-xl">
+    <ul class="d-flex justify-content-center flex-wrap list-unstyled"> 
+      <li><a href="#home" class="nav-item btn btn-primary rounded-pill">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#pojok-media" class="dropdown-toggle nav-item btn btn-primary rounded-pill" data-bs-toggle="dropdown" role="button" aria-expanded="false">Pojok Media</a>
+        <ul class="dropdown-menu rounded-lg shadow-lg">
+          <li><a href="#berita-utama" class="dropdown-item">Berita Utama</a></li>
+          <li><a href="#berita" class="dropdown-item">Berita</a></li>
+          <li><a href="#artikel" class="dropdown-item">Artikel</a></li>
+          <li><a href="#download" class="dropdown-item">Download</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#profil" class="dropdown-toggle nav-item btn btn-primary rounded-pill" data-bs-toggle="dropdown" role="button" aria-expanded="false">Profil</a>
+        <ul class="dropdown-menu rounded-lg shadow-lg">
+          <li><a href="#organisasi" class="dropdown-item">Organisasi</a></li>
+          <li class="dropdown-submenu">
+            <a href="#capability" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Capability</a>
+            <ul class="dropdown-menu">
+              <li><a href="#brainware" class="dropdown-item">Brainware</a></li>
+              <li><a href="#cad-cam" class="dropdown-item">CAD/CAM</a></li>
+              <li><a href="#software-development" class="dropdown-item">Software Development</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#project" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Project</a>
+            <ul class="dropdown-menu">
+              <li><a href="#n219" class="dropdown-item">N219</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#sdm" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">SDM</a>
+            <ul class="dropdown-menu">
+              <li><a href="#personil" class="dropdown-item">Personil</a></li>
+              <li><a href="#jdq" class="dropdown-item">JDQ</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#kerjasama-teknologi" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Kerjasama Teknologi</a>
+            <ul class="dropdown-menu">
+              <li><a href="#experience" class="dropdown-item">Experience</a></li>
+              <li><a href="#kerjasama-teknologi-detail" class="dropdown-item">Kerjasama Teknologi</a></li>
+              <li><a href="#ptdi-hankam" class="dropdown-item">PT DI - Hankam</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#fasilitas" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Fasilitas</a>
+            <ul class="dropdown-menu">
+              <li><a href="#ground-test" class="dropdown-item">Ground Test</a></li>
+              <li><a href="#flight-test" class="dropdown-item">Flight Test</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#command-media" class="dropdown-toggle nav-item btn btn-primary rounded-pill" data-bs-toggle="dropdown" role="button" aria-expanded="false">Command Media</a>
+        <ul class="dropdown-menu rounded-lg shadow-lg">
+          <li><a href="#sistem-command-media" class="dropdown-item">Sistem Command Media</a></li>
+          <li><a href="#sekilas-info-command-media" class="dropdown-item">Sekilas Info Command Media</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#oc" class="dropdown-toggle nav-item btn btn-primary rounded-pill" data-bs-toggle="dropdown" role="button" aria-expanded="false">OC</a>
+        <ul class="dropdown-menu rounded-lg shadow-lg">
+          <li><a href="#certificate" class="dropdown-item">Certificate</a></li>
+          <li><a href="#oc" class="dropdown-item">OC</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#regulation" class="dropdown-toggle nav-item btn btn-primary rounded-pill" data-bs-toggle="dropdown" role="button" aria-expanded="false">Regulation</a>
+        <ul class="dropdown-menu rounded-lg shadow-lg">
+          <li><a href="#pemerintahan-ri" class="dropdown-item">Pemerintahan RI</a></li>
+          <li><a href="#kementrian-perhubungan-ri" class="dropdown-item">Kementrian Perhubungan RI</a></li>
+          <li><a href="#kementrian-pertahanan-ri" class="dropdown-item">Kementrian Pertahanan RI</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#information" class="dropdown-toggle nav-item btn btn-primary rounded-pill" data-bs-toggle="dropdown" role="button" aria-expanded="false">Information</a>
+        <ul class="dropdown-menu rounded-lg shadow-lg">
+          <li><a href="#kalender-kerja" class="dropdown-item">Kalender Kerja</a></li>
+          <li><a href="#telepon-penting" class="dropdown-item">Telepon Penting</a></li>
+          <li><a href="#jadwal-kereta-api" class="dropdown-item">Jadwal Kereta Api Jur. Bandung</a></li>
+          <li><a href="#jadwal-penerbangan" class="dropdown-item">Jadwal Penerbangan</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact-us" class="nav-item btn btn-primary rounded-pill">Contact Us</a></li>
+      <li><a href="#link" class="nav-item btn btn-primary rounded-pill">Link</a></li>
+      <li><a href="#hki" class="nav-item btn btn-primary rounded-pill">HKI</a></li>
+      <li><a href="#online-publication" class="nav-item btn btn-primary rounded-pill">Online Publication</a></li>
+    </ul>
+  </div>
+</nav>
+
+ <!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+  <div class="container position-relative">
+    <div class="owl-carousel hero-slider" data-aos="fade-in">
+      <!-- Slide 1 -->
+      <div class="slider-item">
+        <video autoplay muted loop class="slider-video">
+          <source src="assets/img/slider-item/pesawat/n219.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slider-item">
+        <video autoplay muted loop class="slider-video">
+          <source src="assets/img/slider-item/pesawat/nc212i.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slider-item">
+        <video autoplay muted loop class="slider-video">
+          <source src="assets/img/slider-item/pesawat/cn235.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Slide 4 -->
+      <div class="slider-item">
+        <video autoplay muted loop class="slider-video">
+          <source src="assets/img/slider-item/pesawat/h225m.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Slide 5 -->
+      <div class="slider-item">
+        <video autoplay muted loop class="slider-video">
+          <source src="assets/img/slider-item/pesawat/as365n3+.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Slide 6 -->
+      <div class="slider-item">
+        <video autoplay muted loop class="slider-video">
+          <source src="assets/img/slider-item/pesawat/as550.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Owl Carousel CSS & JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+  $('.hero-slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
+    items: 1,
+    navText: [
+      '<span class="nav-btn nav-prev">&lt;</span>',
+      '<span class="nav-btn nav-next">&gt;</span>',
+    ],
+  });
+});
+
+</script>
+  <main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Direktorat Teknologi dan Pengembangan PT. Dirgantara Indonesia</h2>
+          <p>Selamat datang di portal resmi Direktorat Teknologi dan Pengembangan PT Dirgantara Indonesia, platform inovatif yang menghadirkan kemudahan dan efisiensi dalam pengelolaan teknologi dan informasi. Portal ini dilengkapi dengan fitur unggulan seperti:</p>
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+
+
+          <div class="row gy-4 portfolio-container">
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/dotproject.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/dotproject.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="Real Time Gender Detection.html" title="More Details">dotProject</a></h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/dashboard.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/dashboard.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="Face detection.html" title="More Details">Dashboard DTP</a></h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/doa.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/doa.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="heart.html" title="More Details">DOA</a></h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/siedm.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/siedm.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="car.html" title="More Details">SIEDM</a></h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/certificate.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/certificate.png" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="Charging Statation.html" title="More Details">Certification</a></h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+              <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <a href="assets/img/portfolio/telepon.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/telepon.png" class="img-fluid" alt=""></a>
+                  <div class="portfolio-info">
+                    <h4><a href="Real Time Gender Detection.html" title="More Details">Telepon Penting</a></h4>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Artikel Section ======= -->
+<section id="services" class="services sections-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+
+      <!-- Bagian Kiri -->
+      <div class="col-lg-4">
+        <div class="left-section shadow-lg p-4 rounded">
+
+          <!-- Artikel -->
+          <div class="artikel mb-4">
+            <h2 class="text-primary mb-3">Artikel</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="artikel1.php" class="text-decoration-none">
+                  <i class="fas fa-newspaper text-primary me-2"></i> Surat Edaran Penerapan The New Normal
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="artikel1.php" class="text-decoration-none">
+                  <i class="fas fa-newspaper text-primary me-2"></i> Mencermati Penyebab Rontoknya Burung Besi
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="artikel1.php" class="text-decoration-none">
+                  <i class="fas fa-newspaper text-primary me-2"></i> Bila Terjadi Gempa
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="artikel1.php" class="text-decoration-none">
+                  <i class="fas fa-newspaper text-primary me-2"></i> SMART 2006
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="artikel2.php" class="text-decoration-none">
+                  <i class="fas fa-newspaper text-primary me-2"></i> Implementasi Smarteam pada Pengembangan Produk Pesawat Terbang
+                </a>
+              </li>
+            </ul>
+            <a href="all-artikel.php" class="text-decoration-none text-primary">
+              <i class="fas fa-chevron-right me-1"></i> Lihat Semua Artikel
+            </a>
+          </div>
+
+          <!-- Agenda -->
+          <div class="agenda mb-4">
+            <h2 class="text-primary mb-3">Agenda</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="main.php" class="text-decoration-none">
+                  <i class="fas fa-calendar-alt text-primary me-2"></i> PROJECT MANAGER WORKSHOP
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="main.php" class="text-decoration-none">
+                  <i class="fas fa-calendar-alt text-primary me-2"></i> Piping & Pipeline Integrity Management System With ASME Codes And Standards
+                </a>
+              </li>
+            </ul>
+            <a href="all-agenda.php" class="text-decoration-none text-primary">
+              <i class="fas fa-chevron-right me-1"></i> Lihat Semua Agenda
+            </a>
+          </div>
+
+          <!-- Download -->
+          <div class="download">
+            <h2 class="text-primary mb-3">Download</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="download.php?file=file1.pdf" class="text-decoration-none">
+                  <i class="fas fa-download text-primary me-2"></i>Materi Sosialisasi Dotproject DTP</a></li>
+              <li class="mb-2">
+                <a href="download.php?file=file2.pdf" class="text-decoration-none">
+                  <i class="fas fa-download text-primary me-2"></i>Materi Office Management</a></li>
+              <li class="mb-2">
+                <a href="download.php?file=file3.pdf" class="text-decoration-none">
+                  <i class="fas fa-download text-primary me-2"></i>Materi Product Certification</a></li>
+              <li class="mb-2">
+                <a href="download.php?file=file4.pdf" class="text-decoration-none">
+                  <i class="fas fa-download text-primary me-2"></i>Materi Overview Project Management</a></li>
+              <li>
+                <a href="download.php?file=file5.pdf" class="text-decoration-none">
+                  <i class="fas fa-download text-primary me-2"></i>Materi Training Manajemen 2011
+                </a>
+              </li>
+            </ul>
+            <a href="all-download.php" class="text-decoration-none text-primary">
+              <i class="fas fa-chevron-right me-1"></i> Lihat Semua Download
+            </a>
+          </div>
+
+        </div>
+      </div>
+      
+          <!-- Bagian Kanan -->
+          <div class="col-lg-8">
+            <div class="right-section shadow-lg p-4 rounded">
+              <h2 class="text-primary mb-4">Berita Utama</h2>
+              <div class="news-item">
+                <h3 class="text-dark mb-3">Judul Berita Utama</h3>
+                <div class="news-image-wrapper position-relative mb-3">
+                  <img src="assets/img/5.jpg" alt="Foto Berita Utama" class="img-fluid rounded">
+                  <div class="overlay d-flex align-items-center justify-content-center">
+                    <span class="text-white">Lihat Detail</span>
+                  </div>
+                </div>
+                <p class="text-muted">Aplikasi DIgital Resmi Rilis di Play Store, Download Sekarang!</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Sekilas Berita Section ======= -->
+    <section id="sekilas-berita" class="sekilas-berita">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">Sekilas Direktorat Teknologi dan Pengembangan</h2>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="slide">
+              <img src="assets/img/thumb_3.jpg" alt="Berita 1" class="news-img">
+              <div class="caption">
+                <h3>Judul Berita 1</h3>
+                <p>Ini adalah deskripsi singkat dari berita pertama.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="assets/img/thumb_33.jpg" alt="Berita 2" class="news-img">
+              <div class="caption">
+                <h3>Judul Berita 2</h3>
+                <p>Ini adalah deskripsi singkat dari berita kedua.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="assets/img/thumb_C-130-TNI-AU.jpg" alt="Berita 3" class="news-img">
+              <div class="caption">
+                <h3>Judul Berita 3</h3>
+                <p>Ini adalah deskripsi singkat dari berita kedua.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="assets/img/thumb_Rudal 2022.jpg" alt="Berita 4" class="news-img">
+              <div class="caption">
+                <h3>Judul Berita 4</h3>
+                <p>Ini adalah deskripsi singkat dari berita kedua.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="assets/img/thumb_Rudal 2022.jpg" alt="Berita 5" class="news-img">
+              <div class="caption">
+                <h3>Judul Berita 5</h3>
+                <p>Ini adalah deskripsi singkat dari berita kedua.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="assets/img/thumb_zieng.jpg" alt="Berita 6" class="news-img">
+              <div class="caption">
+                <h3>Judul Berita 6</h3>
+                <p>Ini adalah deskripsi singkat dari berita ketiga.</p>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <button class="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>    <!-- ======= End Sekilas Berita Section ======= -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Kontak</h2>
+          <p>Terima kasih atas minat Anda untuk terhubung dengan PT Dirgantara Indonesia (Persero). Kami menghargai setiap pertanyaan, masukan, dan peluang kerja sama. Tim kami dengan senang hati akan membantu Anda.</p>
+          </div>
+
+        <div class="row gx-lg-0 gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Lokasi:</h4>
+                  <p>PT Dirgantara Indonesia (Persero)
+                    Jalan Pajajaran No. 154
+                    Bandung 40174
+                    West Java - Indonesia
+                    </p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>kevin@indonesian-aerospace.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+91 7218512152</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h4>Open Hours:</h4>
+                  <p>Mon-Thu: 09:00 - 11:30, 13:00 - 16:00<br>
+                    Fri: 09:00 - 11:00, 14:00 - 17:00<br>
+                    Sat-Sun: Closed</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form method="post" action="https://10.1.0.6/" enctype="application/x-www-form-urlencoded" name="login" target="_blank" class="php-email-form">
+                <h2>Quick Login Email Internal</h2>
+                <!-- Input Container -->
+                <div class="input-container">
+                    <!-- UserID Field -->
+                    <div class="form-group">
+                        <label for="loginname">UserID</label>
+                        <input type="text" name="loginname" class="form-control" id="loginname" placeholder="Enter UserID" required>
+                    </div>
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <!-- Status Messages -->
+                    <div class="loading">Loading...</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your login request has been sent. Thank you!</div>
+                </div>
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="button" class="btn-login" onclick="validateLogin()">Login</button>
+                </div>
+            </form>
+        </div>
+        
+        <script>
+            function validateLogin() {
+                var userID = document.getElementById("loginname").value;
+                var password = document.getElementById("password").value;
+        
+                if (userID && password) {
+                    document.forms["login"].submit(); // Submit form if both fields are filled
+                } else {
+                    alert("Please enter both UserID and Password.");
+                }
+            }
+        </script>               
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+   <div class="container mt-4">
+      <div class="copyright">
+        &copy; 2024 <strong><span>Direktorat Teknologi dan Pengembangan - Dirgantara Indonesia</span></strong>. All Rights Reserved
+      </div>
+      <div class="social-links d-flex justify-content-center align-items-center">
+        <a href="https://twitter.com/@officialptdi" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/officialptdi/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/officialptdi" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@officialptdi2301" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://linkedin.com/in/officialptdi" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- JS Files-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
