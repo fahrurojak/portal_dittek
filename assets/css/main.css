@@ -399,6 +399,87 @@ section {
   align-items: center;
 }
 
+/* ==========================
+   Mobile-first responsive utilities and improvements
+   - touch-friendly buttons
+   - flexible containers (Flexbox/Grid)
+   - optimized typography and spacing
+   - image helpers
+ ==========================
+*/
+
+:root{
+  --container-max-width:1200px;
+  --gutter:16px;
+  --radius:12px;
+  --tap-size:48px;
+}
+
+/* Basic layout container */
+.container{max-width:var(--container-max-width);padding-left:var(--gutter);padding-right:var(--gutter);margin-left:auto;margin-right:auto}
+
+/* Responsive grid helpers (simple) */
+.row{display:flex;flex-wrap:wrap;margin-left:calc(-1 * var(--gutter));margin-right:calc(-1 * var(--gutter))}
+.col{padding-left:var(--gutter);padding-right:var(--gutter);flex:1 1 100%}
+.col-auto{flex:0 0 auto}
+
+/* Typography - mobile first */
+body{font-size:16px;line-height:1.5}
+h1{font-size:1.6rem}
+h2{font-size:1.3rem}
+h3{font-size:1.1rem}
+
+/* Buttons - touch friendly */
+.btn,button,input[type=button],.btn-login{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;cursor:pointer;font-weight:600;border:0}
+.btn:focus{outline:3px solid rgba(47,49,139,0.15);outline-offset:2px}
+
+/* Make links and list items easier to tap */
+.nav-item{min-height:var(--tap-size);min-width:var(--tap-size);display:inline-flex;align-items:center;justify-content:center}
+
+/* Image helpers */
+img{max-width:100%;height:auto;display:block}
+.img-fluid{width:100%;height:auto}
+
+/* Navbar (mobile-first) */
+#navbar{display:none}
+.mobile-nav-toggle{font-size:1.4rem;line-height:1;cursor:pointer}
+body.mobile-nav-active #navbar{display:block;position:fixed;inset:72px 12px 0 12px;background:#fff;border-radius:12px;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,0.12);z-index:9999}
+#navbar ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+#navbar a{display:block;padding:12px;border-radius:8px}
+
+/* Dropdowns in mobile nav */
+.navbar .dropdown .dropdown-menu{display:block;position:relative;box-shadow:none;border:none;padding-left:10px}
+
+/* Hero slider optimizations */
+.hero .slider-video{width:100%;height:auto;max-height:48vh;object-fit:cover}
+
+/* Footer and bottom nav responsive */
+.bottom-navbar .nav-item .btn{padding:10px 12px}
+
+/* Larger screens */
+@media (min-width: 768px){
+  #navbar{display:block}
+  .mobile-nav-toggle{display:none}
+  .row{margin-left:calc(-1 * var(--gutter) * 0.5);margin-right:calc(-1 * var(--gutter) * 0.5)}
+  .col-md-6{flex:0 0 50%;max-width:50%}
+  .col-xl-4{flex:0 0 33.3333%;max-width:33.3333%}
+  h1{font-size:2.2rem}
+  h2{font-size:1.6rem}
+}
+
+@media (min-width: 1200px){
+  .hero .slider-video{max-height:72vh}
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}
+}
+
+/* Minor performance hints */
+.lazy{will-change:transform,opacity}
+
+
 .modal-body {
   padding: 20px;
   font-size: 16px;
